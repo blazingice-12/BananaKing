@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://dwac06shgfxb7"]
+
+[ext_resource type="PackedScene" uid="uid://c38q3wck6t3t" path="res://scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="Script" uid="uid://bp0jub6fy1bhc" path="res://scripts/world.gd" id="1_rwgxs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qhqgy"]
+albedo_color = Color(0, 0.57254905, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7wsd"]
+albedo_color = Color(0.6482204, 2.1779165e-06, 6.256998e-07, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s7rlf"]
+albedo_color = Color(0.027718691, 0.44299445, 0.99999994, 1)
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_nnsk1"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_rwgxs"]
+sky_material = SubResource("ProceduralSkyMaterial_nnsk1")
+
+[sub_resource type="Environment" id="Environment_4wyf3"]
+background_mode = 2
+sky = SubResource("Sky_rwgxs")
+glow_enabled = true
+
+[node name="World" type="Node3D" unique_id=1981793884]
+script = ExtResource("1_rwgxs")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1776252959]
+transform = Transform3D(-0.70710677, -0.35355338, 0.6123724, 0, 0.8660254, 0.5, -0.70710677, 0.35355338, -0.6123724, 0, 0, 0)
+shadow_enabled = true
+
+[node name="World Stuff" type="Node3D" parent="." unique_id=309697006]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="World Stuff" unique_id=1302737495]
+material_override = SubResource("StandardMaterial3D_qhqgy")
+use_collision = true
+size = Vector3(48, 0.001, 48)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="World Stuff" unique_id=1350222579]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0005, -24)
+use_collision = true
+size = Vector3(48, 4, 1)
+metadata/_edit_group_ = true
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="World Stuff" unique_id=371769336]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0005, 24)
+use_collision = true
+size = Vector3(48, 4, 1)
+metadata/_edit_group_ = true
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="World Stuff" unique_id=1021347533]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24, 2.0005, 0)
+use_collision = true
+size = Vector3(48, 4, 1)
+metadata/_edit_group_ = true
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="World Stuff" unique_id=278585861]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -24, 2.0005, 0)
+use_collision = true
+size = Vector3(48, 4, 1)
+metadata/_edit_group_ = true
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="World Stuff" unique_id=1099461749]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.320892, 2.1084101, -12.488481)
+material_override = SubResource("StandardMaterial3D_s7wsd")
+use_collision = true
+size = Vector3(2.8984375, 4.2158203, 5.279785)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="World Stuff" unique_id=1035650490]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7615108, 1.7118647, -16.199356)
+material_override = SubResource("StandardMaterial3D_s7rlf")
+use_collision = true
+size = Vector3(6.352539, 3.4227295, 3.6904297)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="World Stuff" unique_id=70416322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.540147, 3.6264462, 13.731374)
+material_override = SubResource("StandardMaterial3D_s7rlf")
+use_collision = true
+size = Vector3(13.387207, 7.251892, 10.07373)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff" unique_id=1120924031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 3.8723261, 13.989257)
+material_override = SubResource("StandardMaterial3D_s7wsd")
+use_collision = true
+size = Vector3(5.8583984, 7.7436523, 5.279785)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1538536912]
+environment = SubResource("Environment_4wyf3")
+
+[node name="Player" parent="." unique_id=384746813 instance=ExtResource("1_nnsk1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1, 0)
