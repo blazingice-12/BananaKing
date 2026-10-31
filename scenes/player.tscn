@@ -21,6 +21,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.9, 0)
 [node name="Camera3D" type="Camera3D" parent="Head" unique_id=2019784980]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.32707632, 0)
 
+[node name="RayCast3D" type="RayCast3D" parent="Head/Camera3D" unique_id=663834930]
+target_position = Vector3(0, 0, -80)
+
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=483194919]
 
 [node name="Crosshair" type="ColorRect" parent="CanvasLayer" unique_id=1910004818]
@@ -36,3 +39,5 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
+
+[node name="WebLine" type="MeshInstance3D" parent="." unique_id=1445698553]

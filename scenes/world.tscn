@@ -34,57 +34,121 @@ shadow_enabled = true
 [node name="World Stuff" type="Node3D" parent="." unique_id=309697006]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="World Stuff" unique_id=1302737495]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 0, -42)
 material_override = SubResource("StandardMaterial3D_qhqgy")
 use_collision = true
-size = Vector3(48, 0.001, 48)
+size = Vector3(152, 0.001, 132)
 
 [node name="CSGBox3D2" type="CSGBox3D" parent="World Stuff" unique_id=1350222579]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0005, -24)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, 2.0005, -107)
 use_collision = true
-size = Vector3(48, 4, 1)
+size = Vector3(152, 4, 1)
 metadata/_edit_group_ = true
 
 [node name="CSGBox3D3" type="CSGBox3D" parent="World Stuff" unique_id=371769336]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0005, 24)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52.5, 2.0005, 24)
 use_collision = true
-size = Vector3(48, 4, 1)
+size = Vector3(153, 4, 1)
 metadata/_edit_group_ = true
 
 [node name="CSGBox3D4" type="CSGBox3D" parent="World Stuff" unique_id=1021347533]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24, 2.0005, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 23.999998, 2.0005, -44)
 use_collision = true
-size = Vector3(48, 4, 1)
+size = Vector3(136, 4, 1)
 metadata/_edit_group_ = true
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="World Stuff" unique_id=278585861]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -24, 2.0005, 0)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -128, 2.0005, -41.5)
 use_collision = true
-size = Vector3(48, 4, 1)
+size = Vector3(131, 4, 1)
 metadata/_edit_group_ = true
 
 [node name="CSGBox3D6" type="CSGBox3D" parent="World Stuff" unique_id=1099461749]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.320892, 2.1084101, -12.488481)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.320892, 9.287304, -12.488481)
 material_override = SubResource("StandardMaterial3D_s7wsd")
 use_collision = true
-size = Vector3(2.8984375, 4.2158203, 5.279785)
+size = Vector3(2.8984375, 18.573608, 5.279785)
 
 [node name="CSGBox3D7" type="CSGBox3D" parent="World Stuff" unique_id=1035650490]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7615108, 1.7118647, -16.199356)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.457602, 6.7356377, -13.72706)
 material_override = SubResource("StandardMaterial3D_s7rlf")
 use_collision = true
-size = Vector3(6.352539, 3.4227295, 3.6904297)
+size = Vector3(6.352539, 13.470276, 5.4536133)
 
-[node name="CSGBox3D8" type="CSGBox3D" parent="World Stuff" unique_id=70416322]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.540147, 3.6264462, 13.731374)
-material_override = SubResource("StandardMaterial3D_s7rlf")
-use_collision = true
-size = Vector3(13.387207, 7.251892, 10.07373)
+[node name="Building with slab3" type="Node3D" parent="World Stuff" unique_id=410840007]
+transform = Transform3D(-0.5606469, 0, -0.82805496, 0, 1, 0, 0.82805496, 0, -0.5606469, -28.612492, -4.733288, -57.441322)
 
-[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff" unique_id=1120924031]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 3.8723261, 13.989257)
+[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff/Building with slab3" unique_id=562477030]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 21.587475, 12.718627)
 material_override = SubResource("StandardMaterial3D_s7wsd")
 use_collision = true
-size = Vector3(5.8583984, 7.7436523, 5.279785)
+size = Vector3(5.8583984, 43.17395, 2.7385254)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="World Stuff/Building with slab3" unique_id=666436971]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.256935, 42.96036, 3.108078)
+use_collision = true
+size = Vector3(6, 0.5, 17)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="World Stuff" unique_id=70416322]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.872593, 15.449806, 12.745713)
+material_override = SubResource("StandardMaterial3D_s7rlf")
+use_collision = true
+size = Vector3(13.387207, 30.898613, 10.07373)
+
+[node name="Building with slab" type="Node3D" parent="World Stuff" unique_id=1837249824]
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff/Building with slab" unique_id=1120924031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 21.587475, 12.718627)
+material_override = SubResource("StandardMaterial3D_s7wsd")
+use_collision = true
+size = Vector3(5.8583984, 43.17395, 2.7385254)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="World Stuff/Building with slab" unique_id=1675047213]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.256935, 42.96036, 3.108078)
+use_collision = true
+size = Vector3(6, 0.5, 17)
+
+[node name="Building with slab2" type="Node3D" parent="World Stuff" unique_id=268349694]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.612492, -16.81723, 0)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff/Building with slab2" unique_id=886154171]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 21.587475, 12.718627)
+material_override = SubResource("StandardMaterial3D_s7wsd")
+use_collision = true
+size = Vector3(5.8583984, 43.17395, 2.7385254)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="World Stuff/Building with slab2" unique_id=706974215]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.256935, 42.96036, 3.108078)
+use_collision = true
+size = Vector3(6, 0.5, 17)
+
+[node name="Building with slab4" type="Node3D" parent="World Stuff" unique_id=2109763359]
+transform = Transform3D(-0.36557043, 0, -0.9307837, 0, 1, 0, 0.9307837, 0, -0.36557043, -84.000496, 0, -59.611485)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff/Building with slab4" unique_id=1539523166]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 21.587475, 12.718627)
+material_override = SubResource("StandardMaterial3D_s7wsd")
+use_collision = true
+size = Vector3(5.8583984, 43.17395, 2.7385254)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="World Stuff/Building with slab4" unique_id=1940294650]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.256935, 42.96036, 3.108078)
+use_collision = true
+size = Vector3(6, 0.5, 17)
+
+[node name="Building with slab5" type="Node3D" parent="World Stuff" unique_id=2047933717]
+transform = Transform3D(0.35224676, 0, -0.9359072, 0, 1, 0, 0.9359072, 0, 0.35224676, -95.56624, 0, -16.697075)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="World Stuff/Building with slab5" unique_id=1569442207]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.273468, 21.587475, 12.718627)
+material_override = SubResource("StandardMaterial3D_s7wsd")
+use_collision = true
+size = Vector3(5.8583984, 43.17395, 2.7385254)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="World Stuff/Building with slab5" unique_id=1362186180]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.256935, 42.96036, 3.108078)
+use_collision = true
+size = Vector3(6, 0.5, 17)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1538536912]
 environment = SubResource("Environment_4wyf3")
